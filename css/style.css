@@ -1,0 +1,22 @@
+body {
+
+}
+.border {
+    border: 2px solid black;
+}
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.top-part {
+    height: 450px;
+    background: /*linear-gradient(to top, #fdfdfd, #fff),*/ url("../img/mountain.jpg") 50% bottom no-repeat;
+    padding: 5% 0 0 0;
+}
+.top-menu{
+
+}
+.apple-logo {
+    height:20px;
+}
