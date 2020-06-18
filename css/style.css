@@ -1,22 +1,47 @@
 body {
-
+  margin-top: 0;
 }
 .border {
-    border: 2px solid black;
+  border: 2px solid black;
 }
 .flexRow {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-container {
+  margin: 0 40px;
 }
 
 .top-part {
-    height: 450px;
-    background: /*linear-gradient(to top, #fdfdfd, #fff),*/ url("../img/mountain.jpg") 50% bottom no-repeat;
-    padding: 5% 0 0 0;
+  height: 520px;
+  max-width: 100%;
+  background: /*linear-gradient(to top, #fdfdfd, #fff),*/ url("../img/mountain.jpg") 50% bottom no-repeat;
+  padding: 5% 0 0 0;
 }
-.top-menu{
+
+.top-container {
+  /* position */
+
+  /* box-model */
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav {
+  /* Positioning */
+  /* Box-model */
+  height: 40PX;
+  margin: 0 4VW;
+  /* Typography */
+  /* Visual */
+  background: linear-gradient(to top, #666 50%, #747474 50%);
 
 }
+
+.top-menu{
+  list-style: none;
+}
 .apple-logo {
-    height:20px;
+  height:20px;
 }
