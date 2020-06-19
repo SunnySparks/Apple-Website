@@ -176,9 +176,9 @@ nav {
   }
    .middle-pic{
     width: 25%;
-    height: 200px;
-    border: 1px solid white;
-    background-size: cover;
+    height: 100%;
+    border: 1px solid black;
+    background-size: 100% 100%;
     flex-shrink: 3;
     background-repeat: no-repeat;
   }
