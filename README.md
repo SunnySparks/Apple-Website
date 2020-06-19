@@ -12,7 +12,7 @@ This project is made to test our understanding in background and gradients.
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/SunnySparks/Apple-Website/3d1ebd06f74cbd131a28220149d884d242332b26/index.html)
+[Live Demo Link](https://rawcdn.githack.com/SunnySparks/Apple-Website/8923e8c48d20bd8be7b2f3d15c11dfca98c49f36/index.html)
 
 ## Authors
 
