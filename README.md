@@ -1,7 +1,7 @@
 # Apple-Website
 This project's purpose is to recreate apple's website
 
-![screenshot](img/Screenshot.JPG)
+![screenshot](img/screenshot.JPG)
 
 This project is made to test our understanding in background and gradients.
 
