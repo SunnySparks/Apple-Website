@@ -33,7 +33,14 @@ body {
   height: 520px;
   max-width: 100%;
   background: /*linear-gradient(to top, #fdfdfd, #fff),*/ url("../img/mountain.jpg") 50% 100% no-repeat;
-  background-position: c;
+  /* background-size: cover; */
+}
+
+@media screen and (min-width: 1635px) {
+  .top-part {
+    background-size: cover; 
+    background-position: 0% 90%;
+  }
 }
 
 .top-container {
@@ -68,7 +75,7 @@ nav {
   margin: 0;
   padding: 0;
   height: 100%;
-  width: 85%;
+  width: 95%;
   list-style: none;
 }
 
@@ -97,29 +104,43 @@ nav {
 
 .menu-form {
   position: relative;
-  max-width: 15%;
-  padding: 2px 0;
-  justify-content: center;
+  width: auto;
+  margin-left: -20px;
+  padding: 2px 2% 0 0;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .menu-form > img {
   position: absolute;
-  left: 1.5vw;
+  left: 30px;
   max-width: 13px;
   height: auto;
+  z-index: 100;
 }
 
-.menu-form > input {
-  display: inline-block;
-  height: 20px;
+.search-field {
+  /* position: relative; */
+  /* right: 0 !important; */
+  height: 22px;
   width: 80%;
   border-radius: 20px;
   border-top: #666 inset 1px;
   border-bottom: 1px inset #747474;
   border-left: none;
-  background: linear-gradient(to top,#7e7e7e, #666 50%, #747474 50%, #8d8c8c);
+  background: linear-gradient(to top,#969292, rgb(112, 111, 111) 50%, #747474 50%, #8d8c8c);
+  transition: all .2s linear;
 }
+
+.search-field:focus {
+  background: white;
+  width: 150px;
+  margin-left: 30px;
+}
+
+/* .search-field:focus .menu-form {
+  max-width: 20%;
+} */
 
 .main-title {
   margin: 3% 0 0 0;
@@ -131,19 +152,24 @@ nav {
 }
 
 .title-header {
-  background: url("../img/h1.png") no-repeat center;
+  background: url("../img/h1.png") no-repeat center 4px;
+  background-size: contain;
   min-height: 100px;
+  max-width: 100%;
 }
 
 .title-subheader {
   background: url("../img/sh1.png") no-repeat center;
+  background-size: contain;
   min-height: 80px;
+  max-width: 100%;
 }
 
 .title-link {
   background: url("../img/sh3.png") no-repeat center 0px;
-  min-height: 30px;
-  width: 50%;
+  /* background-size: contain; */
+  height: 30px;
+  max-width: 50%;
   margin: 2% auto 0 auto;
 }
 
@@ -151,3 +177,4 @@ nav {
   padding: 0 0 10px 0;
   border-bottom: 1px solid white;
 }
+
