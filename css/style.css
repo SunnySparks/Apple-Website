@@ -1,3 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+.franklin {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.zilla {
+  font-family: 'Zilla Slab', serif;
+}
+
+.tinos {
+  font-family: 'Tinos', serif;
+}
+
 body {
   margin-top: 0;
 }
@@ -16,32 +32,122 @@ body {
 .top-part {
   height: 520px;
   max-width: 100%;
-  background: /*linear-gradient(to top, #fdfdfd, #fff),*/ url("../img/mountain.jpg") 50% bottom no-repeat;
-  padding: 5% 0 0 0;
+  background: /*linear-gradient(to top, #fdfdfd, #fff),*/ url("../img/mountain.jpg") 50% 100% no-repeat;
+  background-position: c;
 }
 
 .top-container {
   /* position */
 
   /* box-model */
+  padding: 5% 0 0 0; 
   width: 80%;
+  height: 100%;
   margin: 0 auto;
+  overflow-y: hidden;
 }
 
 nav {
   /* Positioning */
+
   /* Box-model */
-  height: 40PX;
-  margin: 0 4VW;
+
+  height: 35PX;
+
+  margin: 0 6vw;
+
   /* Typography */
+
   /* Visual */
-  background: linear-gradient(to top, #666 50%, #747474 50%);
+
+  background: linear-gradient(to top,#7e7e7e, #666 50%, #747474 50%, #8d8c8c);
 
 }
 
 .top-menu{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 85%;
   list-style: none;
 }
+
+.top-menu li {
+  border-right: 1px solid rgb(34, 33, 33);
+  box-shadow: 0px 0px 1px 0.5px #8d8c8c;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .apple-logo {
   height:20px;
+}
+
+.top-menu > li > a {
+  text-align: center;
+  text-decoration: none;
+  color: rgb(255, 239, 239);
+  text-shadow: 1px -1px 10px rgb(49, 47, 47);
+  font-size: 13px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+.menu-form {
+  position: relative;
+  max-width: 15%;
+  padding: 2px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-form > img {
+  position: absolute;
+  left: 1.5vw;
+  max-width: 13px;
+  height: auto;
+}
+
+.menu-form > input {
+  display: inline-block;
+  height: 20px;
+  width: 80%;
+  border-radius: 20px;
+  border-top: #666 inset 1px;
+  border-bottom: 1px inset #747474;
+  border-left: none;
+  background: linear-gradient(to top,#7e7e7e, #666 50%, #747474 50%, #8d8c8c);
+}
+
+.main-title {
+  margin: 3% 0 0 0;
+  max-height: 100%;
+}
+
+.main-title:hover {
+  cursor: pointer;
+}
+
+.title-header {
+  background: url("../img/h1.png") no-repeat center;
+  min-height: 100px;
+}
+
+.title-subheader {
+  background: url("../img/sh1.png") no-repeat center;
+  min-height: 80px;
+}
+
+.title-link {
+  background: url("../img/sh3.png") no-repeat center 0px;
+  min-height: 30px;
+  width: 50%;
+  margin: 2% auto 0 auto;
+}
+
+.title-link:hover {
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid white;
 }
