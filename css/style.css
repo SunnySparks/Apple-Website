@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 0;
+}
+
+.border {
+  border: 2px solid black;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-container {
+  margin: 0 40px;
+}
+
+.top-part {
+  height: 520px;
+  max-width: 100%;
+  background: /*linear-gradient(to top, #fdfdfd, #fff),*/ url("../img/mountain.jpg") 50% 100% no-repeat;
+}
+
+@media screen and (min-width: 1635px) {
+  .top-part {
+    background-size: cover;
+    background-position: 0% 90%;
+  }
+}
+
+.top-container {
+  padding: 5% 0 0 0;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  overflow-y: hidden;
+}
+
+nav {
+  height: 35px;
+  margin: 0 6vw;
+  background: linear-gradient(to top, #7e7e7e, #666 50%, #747474 50%, #8d8c8c);
+}
+
+.top-menu {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 95%;
+  list-style: none;
+}
+
+.top-menu li {
+  border-right: 1px solid rgb(34, 33, 33);
+  box-shadow: 0 0 1px 0.5px #8d8c8c;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.apple-logo {
+  height: 20px;
+}
+
+.top-menu > li > a {
+  text-align: center;
+  text-decoration: none;
+  color: rgb(255, 239, 239);
+  text-shadow: 1px -1px 10px rgb(49, 47, 47);
+  font-size: 13px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+.menu-form {
+  position: relative;
+  width: auto;
+  margin-left: -20px;
+  padding: 2px 2% 0 0;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-form > img {
+  position: absolute;
+  left: 30px;
+  max-width: 13px;
+  height: auto;
+  z-index: 100;
+}
+
+.search-field {
+  height: 22px;
+  width: 80%;
+  border-radius: 20px;
+  border-top: #666 inset 1px;
+  border-bottom: 1px inset #747474;
+  border-left: none;
+  background: linear-gradient(to top, #969292, rgb(112, 111, 111) 50%, #747474 50%, #8d8c8c);
+  transition: all 0.2s linear;
+}
+
+.search-field:focus {
+  background: white;
+  width: 150px;
+  margin-left: 30px;
+}
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3% 0 0 0;
+  max-height: 100%;
+}
+
+.main-title:hover {
+  cursor: pointer;
+}
+
+.title-header {
+  background: url("../img/h1.png") no-repeat center 4px;
+  background-size: contain;
+  min-height: 100px;
+  width: 100%;
+}
+
+.title-subheader {
+  background: url("../img/sh1.png") no-repeat center;
+  background-size: contain;
+  min-height: 80px;
+  width: 100%;
+}
+
+.title-link {
+  background: url("../img/sh3.png") no-repeat center 0;
+  height: 30px;
+  width: 50%;
+}
+
+@media screen and (max-width: 1457px) {
+  .title-link {
+    background-size: cover;
+    background-position: 0 5px;
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 824px) {
+  .title-link {
+    background-size: 70%;
+    background-position: center 5px;
+    width: 900px;
+  }
+}
+
+.title-link:hover {
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid white;
+}
+
+/* =============================================
+   H E R E  G O E S  T H E  M I D D L E  P A R T
+   */
+
+.middle-part {
+  max-width: 100%;
+  height: 200px;
+}
+
+.middle-pic {
+  width: 25%;
+  height: 100%;
+  border: 1px solid white;
+  background-size: 100% 100%;
+  flex-shrink: 3;
+  background-repeat: no-repeat;
+}
+
+.middle-pic1 {
+  background-image: url(../img/5s.jpg);
+}
+
+.middle-pic2 {
+  background-image: url(../img/5c.jpg);
+}
+
+.middle-pic3 {
+  background-image: url(../img/30.jpg);
+}
+
+.middle-pic4 {
+  background-image: url(../img/supplier.jpg);
+}
+
+/* =============================================
+  H E R E  G O E S  T H E  F O O T E R
+  */
+
+.footer-font {
+  color: #6e6e6e;
+  font-size: small;
+}
+
+.bottom {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.bottom-container {
+  max-width: 70%;
+  min-width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.bottom-1 {
+  float: left;
+}
+
+.bottom-2 {
+  float: right;
+}
+
+.apple-link {
+  color: #08c;
+  text-decoration: none;
+}
+
+.apple-link:hover {
+  color: #08c;
+  text-decoration: underline;
+}
+
+.bottom-list {
+  margin-left: 0.6em;
+  padding-left: 0.6em;
+  border-left: 1px solid #ccc;
+}
+
+.bottom-3 {
+  clear: left;
+}
+
+.bottom-menu {
+  list-style: none;
+  padding: none;
+}
